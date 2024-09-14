@@ -193,7 +193,7 @@ public IActionResult SumValuesStartingWithA()
         queryCmd.CommandText = @"
             SELECT SUM(Value) AS TotalValue
             FROM Employees
-            WHERE Name LIKE 'B%'";
+            WHERE Name LIKE 'A%'";
         
         using (var reader = queryCmd.ExecuteReader())
         {

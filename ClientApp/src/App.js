@@ -65,7 +65,7 @@ function App(){
         console.log(data)
         setEmployees(data)
       }catch(error){
-        console.error('Error fetching task:', error)
+        console.error('Error fetching employees:', error)
       }
   
     }
@@ -119,7 +119,6 @@ const fetchSumValues = async () => {
           console.log('Alphabet Contributions:', data);
 
       } else {
-          // Handle server errors
           const error = await response.text();
           console.log('Server Error:', error);
       }
