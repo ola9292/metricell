@@ -1,0 +1,47 @@
+body{
+    /* background-color: yellow; */
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    border: 1px solid black;
+    margin: auto;
+}
+.center{
+    text-align: center;
+    
+}
+.form-name, .ctas{
+    max-width: 400px;
+    margin: auto;
+}
+.form-name > .name-input, .name-button{
+    padding: 10px 5px;
+}
+.form-name > .name-input{
+    width: 70%;
+}
+.form-name > .name-button{
+    width: 25%;
+}
+.ctas{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.ctas > button{
+    padding: 6px 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
