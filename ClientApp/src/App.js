@@ -104,6 +104,16 @@ const incrementValues = async () => {
   }catch(error){
     console.log('Error: ' + error)
   }
+
+  setEmployees(employees.map((employee) => {
+    if(employee.name.startsWith('E')){
+      return { ...employee, value: employee.value + 1 };
+    }else if(employee.name.startsWith('G')){
+      return { ...employee, value: employee.value + 10 };
+    }else{
+      return { ...employee, value: employee.value + 100 };
+    }
+  }))
   
 };
 
